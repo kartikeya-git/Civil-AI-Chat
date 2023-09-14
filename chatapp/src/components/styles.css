@@ -1,0 +1,31 @@
+/* colors.css */
+
+/* Light mode */
+:root {
+  --primary-100:#EE6C4D;
+  --primary-200:#cc4f34;
+  --primary-300:#7f0000;
+  --accent-100:#F7D1B3;
+  --accent-200:#927156;
+  --text-100:#333333;
+  --text-200:#5c5c5c;
+  --bg-100:#f4fdfd;
+  --bg-200:#C9D6DF;
+  --bg-300:#bfc7d1;
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    --primary-100:#004380;
+    --primary-200:#4a789d;
+    --primary-300:#afdfff;
+    --accent-100:#721c77;
+    --accent-200:#ffe0c8;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#131313;
+    --bg-200:#241f30;
+    --bg-300:#1A1F2B;
+      
+  }
+  

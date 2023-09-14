@@ -1,0 +1,118 @@
+/* HelpPopup.css */
+.help-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .popup-content {
+    background-color: var(--bg-100);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 70vh;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--primary-200);
+  }
+
+  .close-button:hover {
+    font-size: 36px;
+    cursor: pointer;
+    color: var(--primary-200);
+  }
+    
+  .popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-100);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 15px 10px;
+    font-size: 18px;
+    color: var(--text-100);
+    transition: background-color 0.2s;
+    width: 100%;
+    border-radius: 15px;
+  }  
+
+  li:hover {
+    background-color: var(--primary-200);
+    color: var(--bg-100);
+    border-radius: 15px;
+  }
+  
+  li.selected {
+    background-color: var(--primary-100);
+    color: var(--bg-100);
+    border-radius: 15px;
+  }
+  
+  .select-button {
+    margin-top: 20px;
+    background-color: var(--primary-100);
+    color: var(--bg-100);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s;
+  }
+  
+  .select-button:hover {
+    background-color: var(--primary-200);
+  }
+  

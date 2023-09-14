@@ -1,0 +1,142 @@
+/* ChatHeader.css */
+
+.chat-header {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-100);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .chat-title {
+    font-size: 24px;
+    color: var(--text-100);
+    margin: 0;
+    margin-right: 5vh;
+  }
+
+  .dark-mode-button {
+    border: none;
+    background-color: transparent;
+    color: var(--text-200);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto;
+  }
+  
+  .dark-mode-button.dark-mode {
+    color: white;
+    background-color: var(--primary-100);
+  }
+  
+  .dark-mode-button:hover {
+    background-color: var(--primary-100);
+    color: white;
+  }
+  
+  .dark-mode-button:focus {
+    outline: none;
+  }
+
+  .dark-mode-button.dark-mode-active {
+    color: white;
+    background-color: var(--primary-100);
+  }
+
+  .dark-mode-button.dark-mode-active:hover {
+    background-color: var(--primary-200);
+    color: white;
+  }  
+
+  .dark-mode-text {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 16px;
+  }
+
+  .language-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text-100);
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .language-button.language-active {
+    color: black;
+    background-color: var(--accent-200);
+  }
+  
+  .language-text {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 16px;
+  }
+ 
+  .language-button:hover {
+    background-color: var(--primary-200);
+    color: white;
+  }
+
+  .language-button:focus {
+    outline: none;
+  }
+
+
+/* Help button */
+.header-button {
+  border: none;
+  background-color: var(--accent-100); /* Add background color */
+  color: var(--text-100); /* Adjust text color */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 40px;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative; /* Add this */
+  margin-left: 10vh;
+}
+
+.header-button:hover {
+  background-color: var(--primary-100);
+  color: white;
+}
+
+.header-button:focus {
+  outline: none;
+}
+
+/* Fancy styles for the Help button */
+.header-button:before {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-100);
+  opacity: 0.7;
+}
+
+.header-button:hover:before {
+  opacity: 1;
+}
+
+.header-button.dark-mode-active:before,
+.header-button.language-active:before {
+  color: white;
+}

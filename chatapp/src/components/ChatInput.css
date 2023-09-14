@@ -1,0 +1,59 @@
+/* ChatInput.css */
+
+.chat-input {
+    display: flex;
+    background-color: var(--bg-100);
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--bg-200);
+    color: var(--text-100);
+  }
+  
+  .send-button {
+    margin-left: 1.5vw;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--primary-100);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .send-button:hover {
+    background-color: var(--primary-200);
+  }
+
+  .send-button[disabled] {
+    background-color: var(--primary-300); /* Change background color for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate non-interactivity */
+  }
+
+  .new-chat-button {
+    display: inline-block;
+    border: none;
+    background-color: var(--bg-200);
+    color: var(--text-200);
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 16px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 1.5vw;
+    font-size: 18px;
+  }
+  
+  .new-chat-button:hover {
+    background-color: var(--primary-100);
+    color: white;
+  }
+  

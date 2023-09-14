@@ -1,0 +1,30 @@
+/* ChatContainer.css */
+
+/* .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bg-300);
+    padding: 20px;
+    box-sizing: border-box;
+  } */
+
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--bg-300);
+  }
+  
+  .chat-history {
+    flex: 1; /* Take up remaining vertical space */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+  
+  .chat-input {
+    margin-top: 10px; /* Add some spacing between history and input */
+  }
+  
+  
+  /* Additional styling for chat container if needed */
+  
